@@ -19,7 +19,7 @@ namespace VMS.TPS
         {
             //var plan = context.PlanSetup;
 
-            var assemblypath = @"U:\Visual Studio 2013\Projects\BeamDeliveryTime\BeamDeliveryTime\bin\Release\BeamDeliveryTime.exe";
+            var assemblypath = @"\\SVSTOROPRD01\VA_Transfer\AriaScripting\Development\BeamDeliveryTime\BeamDeliveryTime\bin\Release\BeamDeliveryTime.exe";
             var assem = Assembly.UnsafeLoadFrom(assemblypath);
             var script = Activator.CreateInstanceFrom(assemblypath, "BeamDeliveryTime.CalculatorXScript").Unwrap();
             var type = script.GetType();
